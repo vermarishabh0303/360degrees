@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f4ef;
+    color: #000;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: stretch;
+    gap: 0px;
+    margin: 40px 0;
+  }
+  
+  .feature-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    flex: 1;
+    text-align: center;
+    height: 35vh;
+    margin: 40px;
+    width: 100%;
+    
+  }
+  
+  .feature-card img {
+    max-width: 500px;
+    margin-bottom: 20px;
+    height: 16vh;
+  }
+  
+  .feature-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .feature-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Main Text Section */
+  .main-text {
+    font-size: 80px;
+    font-weight: bold;
+    color: #CE5300;
+    margin: 50px 0;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .features {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .feature-card {
+      flex: 1 1 48%; /* Cards take 48% width in a 2-column layout */
+      
+    }
+  
+    .main-text {
+      font-size: 27px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature-card {
+      flex: 1 1 100%; /* Full-width cards */
+      margin-bottom: 20px;
+    }
+  
+    .main-text {
+      font-size: 27px;
+    }
+  }
+  

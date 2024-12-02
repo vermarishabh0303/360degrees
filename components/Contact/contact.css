@@ -1,0 +1,237 @@
+/* Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    padding: 120px 180px 120px 160px;
+    max-width: 1200px;
+    
+    
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-right: 335px;
+    padding-top: 30px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555;
+    padding-top: 20px;
+    
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased spacing between fields */
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row; /* Side-by-side inputs for desktop view */
+    gap: 30px; /* Increased spacing between inputs */
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px 0; /* Ensure consistent vertical padding */
+    font-size: 1rem;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid black; /* Add bottom border only */
+    outline: none; /* Remove default focus outline */
+    background: none; /* Transparent background */
+    text-align: left; /* Align text at the top */
+}
+
+textarea {
+    height: 140px; /* Increased height for message box */
+    resize: none; /* Disable resizing */
+    line-height: 1.5; /* Align placeholder with others */
+    padding-top: 5px; /* Adjust padding for alignment */
+}
+
+input::placeholder,
+textarea::placeholder {
+    text-align: left; /* Ensure placeholder text aligns at the top */
+    color: #555; /* Light gray for placeholders */
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #f97316; /* Highlight on focus */
+}
+
+button {
+    width: 120px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000; /* Default text color */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid black; /* Border for the button */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #8B4513; /* Brown hover background */
+    color: white; /* White text on hover */
+    border: 2px solid rgb(221 41 2); /* Match the border to the background */
+}
+
+
+/* Contact Info Styling */
+.contact-info {
+    text-align: center; /* Center-align all elements */
+    margin: auto;
+    padding: 40px 0; /* Add vertical padding */
+    line-height: 1.8; /* Adjust line height for clarity */
+    text-align: left;
+    padding-top: 30px;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin: 10px 0; /* Add vertical spacing between paragraphs */
+    color: #333;
+    padding-top: 25px;
+}
+
+.contact-info .social-icons {
+    margin-top: 20px; /* Space above social icons */
+    display: flex;
+    justify-content: flex-start; /* Center the icons */
+    gap: 20px; /* Add spacing between icons */
+    padding-top: 35px;
+}
+
+.contact-info .social-icons a img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #fe5c00; /* Orange background color */
+    text-align: center;
+    padding: 20px 0; /* Padding for spacing */
+    margin-top: 100px; /* Add spacing above the footer */
+    color: white; /* White text color for contrast */
+    font-size: 1rem; /* Standard font size */
+}
+
+.footer a {
+    color: white; /* White link text */
+    text-decoration: underline; /* Underline link text */
+    font-weight: bold; /* Make link text bold */
+}
+
+.footer a:hover {
+    color: #333; /* Change link color to dark gray on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center; /* Center-align all elements */
+    }
+
+    .contact-form,
+    .contact-info {
+        text-align: center; /* Center content for smaller screens */
+        margin: auto;
+        
+    }
+
+    .contact-info p{
+        padding-top: 25px;
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack inputs vertically on mobile */
+        gap: 30px; /* Consistent spacing for mobile */
+    }
+
+    .contact-info .social-icons {
+        justify-content: center; /* Center the icons */
+        
+    }
+    button{
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        padding: 5px 0; /* Ensure consistent padding */
+        text-align: left; /* Align text and placeholder to the left */
+        line-height: 3.5; /* Align placeholder in the textarea */
+    }
+
+    textarea {
+        padding-top: 5px; /* Adjust padding for proper alignment */
+    }
+
+    button {
+        width: 100%; /* Full-width button for mobile */
+    }
+
+    .contact-section{
+        padding: 10px 30px;
+    }
+
+    .footer {
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Slightly reduce font size */
+        line-height: 1.5; /* Adjust line height for readability */
+    }
+
+    .footer-content p {
+        margin: 0; /* Remove extra margins */
+        word-wrap: break-word; /* Break long words if necessary */
+    }
+
+    .footer a {
+        font-size: 0.9rem; /* Ensure link text is not too large */
+    }
+}
+
+
+

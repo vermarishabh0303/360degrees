@@ -1,0 +1,39 @@
+/* Footer Styling */
+.footer {
+    background-color: #f97316; /* Orange background color */
+    text-align: center;
+    padding: 20px 0; /* Padding for spacing */
+    margin-top: 40px; /* Add spacing above the footer */
+    color: white; /* White text color for contrast */
+    font-size: 1rem; /* Standard font size */
+}
+
+.footer a {
+    color: white; /* White link text */
+    text-decoration: underline; /* Underline link text */
+    font-weight: bold; /* Make link text bold */
+}
+
+.footer a:hover {
+    color: #333; /* Change link color to dark gray on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+/* Responsive Design for Footer on Mobile */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 10px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Slightly reduce font size */
+        line-height: 1.5; /* Adjust line height for readability */
+    }
+
+    .footer-content p {
+        margin: 0; /* Remove extra margins */
+        word-wrap: break-word; /* Break long words if necessary */
+    }
+
+    .footer a {
+        font-size: 0.9rem; /* Ensure link text is not too large */
+    }
+}
